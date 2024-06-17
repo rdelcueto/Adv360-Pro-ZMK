@@ -1,3 +1,27 @@
+macro_escapex3: macro_escapex3{
+compatible = "zmk,behavior-macro";
+label = "macro_escapex3";
+#binding-cells = <0>;
+bindings = <&kp ESC>, <&kp ESC>, <&kp ESC>;
+};
+macro_allbuffers: macro_allbuffers{
+compatible = "zmk,behavior-macro";
+label = "macro_allbuffers";
+#binding-cells = <0>;
+bindings = <&kp SPACE>, <&kp B>, <&kp LS(U)>;
+};
+macro_swoop: macro_swoop{
+compatible = "zmk,behavior-macro";
+label = "macro_swoop";
+#binding-cells = <0>;
+bindings = <&kp SPACE>, <&kp S>, <&kp LS(S)>;
+};
+macro_dogrep: macro_dogrep{
+compatible = "zmk,behavior-macro";
+label = "macro_dogrep";
+#binding-cells = <0>;
+bindings = <&kp SPACE>, <&kp S>, <&kp R>, <&kp F>;
+};
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
@@ -27,10 +51,4 @@ compatible = "zmk,behavior-macro";
 label = "macro_brackets";
 #binding-cells = <0>;
 bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
-};
-macro_kinesis: macro_kinesis{
-compatible = "zmk,behavior-macro";
-label = "macro_kinesis";
-#binding-cells = <0>;
-bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
